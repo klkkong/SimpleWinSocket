@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
 
     serv_addr.sin_family=AF_INET;
     serv_addr.sin_port=htons(SERVER_PORT);
-    serv_addr.sin_addr.s_addr=inet_addr("124.16.97.37");
+    serv_addr.sin_addr.s_addr=inet_addr("xxx.xx.xx.xx"); // your ip address
     memset(&(serv_addr.sin_zero),0,8);
 
     if(connect(sockfd, (struct sockaddr *)&serv_addr, sizeof(struct sockaddr))==-1) {
